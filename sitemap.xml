@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://hongjinpin.com/</loc>
-         <lastmod>2023-12-04</lastmod>
+         <loc>https://hongjp.cn/</loc>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hongjinpin.com/kubernetes/rancher/</loc>
-         <lastmod>2023-12-04</lastmod>
+         <loc>https://hongjp.cn/kubernetes/rancher/</loc>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hongjinpin.com/mac/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</loc>
-         <lastmod>2023-12-04</lastmod>
+         <loc>https://hongjp.cn/mac/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</loc>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hongjinpin.com/%E9%9A%8F%E8%AE%B0/certbot/</loc>
-         <lastmod>2023-12-04</lastmod>
+         <loc>https://hongjp.cn/%E7%9B%91%E6%8E%A7/altermanager/</loc>
+         <lastmod>2023-12-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hongjp.cn/%E7%9B%91%E6%8E%A7/exporter/</loc>
+         <lastmod>2023-12-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hongjp.cn/%E7%9B%91%E6%8E%A7/prometheus/</loc>
+         <lastmod>2023-12-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hongjp.cn/%E9%9A%8F%E8%AE%B0/certbot/</loc>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
