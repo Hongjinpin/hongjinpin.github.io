@@ -6,32 +6,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hongjp.cn/common/certbot/</loc>
+         <lastmod>2023-12-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hongjp.cn/kubernetes/rancher/</loc>
          <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hongjp.cn/mac/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</loc>
+         <loc>https://hongjp.cn/mac/necessary-apps/</loc>
          <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hongjp.cn/%E7%9B%91%E6%8E%A7/altermanager/</loc>
+         <loc>https://hongjp.cn/monitor/altermanager/</loc>
          <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hongjp.cn/%E7%9B%91%E6%8E%A7/exporter/</loc>
+         <loc>https://hongjp.cn/monitor/exporter/</loc>
          <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hongjp.cn/%E7%9B%91%E6%8E%A7/prometheus/</loc>
-         <lastmod>2023-12-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hongjp.cn/%E9%9A%8F%E8%AE%B0/certbot/</loc>
+         <loc>https://hongjp.cn/monitor/prometheus/</loc>
          <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
     </url>

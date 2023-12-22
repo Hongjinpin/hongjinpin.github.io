@@ -12,13 +12,13 @@
         <meta name="author" content="Hong jinpin">
       
       
-        <link rel="canonical" href="https://hongjp.cn/%E7%9B%91%E6%8E%A7/altermanager/">
+        <link rel="canonical" href="https://hongjp.cn/monitor/exporter/">
       
       
-        <link rel="prev" href="../prometheus/">
+        <link rel="prev" href="../altermanager/">
       
       
-        <link rel="next" href="../exporter/">
+        <link rel="next" href="../../common/certbot/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>altermanager - Hongjp's Blog</title>
+        <title>exporter - Hongjp's Blog</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#start" class="md-skip">
+        <a href="#node_export" class="md-skip">
           跳转至
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              altermanager
+              exporter
             
           </span>
         </div>
@@ -397,6 +397,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../altermanager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    altermanager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -411,7 +432,7 @@
           
   
   <span class="md-ellipsis">
-    altermanager
+    exporter
   </span>
   
 
@@ -422,7 +443,7 @@
         
   
   <span class="md-ellipsis">
-    altermanager
+    exporter
   </span>
   
 
@@ -442,27 +463,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#start" class="md-nav__link">
+  <a href="#node_export" class="md-nav__link">
     <span class="md-ellipsis">
-      start
+      安装node_export
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#altermanageryml" class="md-nav__link">
+  <a href="#cadvisordocker" class="md-nav__link">
     <span class="md-ellipsis">
-      altermanager.yml
+      安装cadvisor（docker监控）
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#teams" class="md-nav__link">
+  <a href="#pg-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      发生告警到teams
+      pg-exporter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kafka-exporter" class="md-nav__link">
+    <span class="md-ellipsis">
+      kafka-exporter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redis_exporter" class="md-nav__link">
+    <span class="md-ellipsis">
+      redis_exporter
     </span>
   </a>
   
@@ -472,27 +511,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../exporter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    exporter
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -549,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E9%9A%8F%E8%AE%B0/certbot/" class="md-nav__link">
+      <a href="../../common/certbot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -614,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/" class="md-nav__link">
+      <a href="../../mac/necessary-apps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,27 +678,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#start" class="md-nav__link">
+  <a href="#node_export" class="md-nav__link">
     <span class="md-ellipsis">
-      start
+      安装node_export
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#altermanageryml" class="md-nav__link">
+  <a href="#cadvisordocker" class="md-nav__link">
     <span class="md-ellipsis">
-      altermanager.yml
+      安装cadvisor（docker监控）
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#teams" class="md-nav__link">
+  <a href="#pg-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      发生告警到teams
+      pg-exporter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kafka-exporter" class="md-nav__link">
+    <span class="md-ellipsis">
+      kafka-exporter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redis_exporter" class="md-nav__link">
+    <span class="md-ellipsis">
+      redis_exporter
     </span>
   </a>
   
@@ -701,40 +737,40 @@
                   
 
 
-  <h1>altermanager</h1>
+  <h1>exporter</h1>
 
-<h4 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h4>
-<pre><code>docker run --name alertmanager  --user "$(id -u)" -d -p 9093:9093 -v /opt/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml -v /opt/alertmanager/data:/alertmanager quay.io/prometheus/alertmanager:v0.26.0
+<h3 id="node_export">安装node_export<a class="headerlink" href="#node_export" title="Permanent link">&para;</a></h3>
+<pre><code>curl -OL https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
+nohup ./node_exporter &gt;node_exporter.log 1&gt;&amp;2 &amp;
 </code></pre>
-<h4 id="altermanageryml">altermanager.yml<a class="headerlink" href="#altermanageryml" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>route:
-  group_by: [&#39;alertname&#39;]
-  group_wait: 30s
-  group_interval: 5m
-  repeat_interval: 1h
-  receiver: &#39;teams_normal&#39;
-  routes:
-    - match:
-        level: high
-      receiver: &#39;teams&#39;
-receivers:
-  - name: &#39;teams&#39;
-    webhook_configs:
-      - url: &#39;http://10.0.0.1:8090&#39;
-  - name: &#39;teams_normal&#39;
-    webhook_configs:
-      - url: &#39;http://10.0.0.1:8089&#39;
-inhibit_rules:
-  - source_match:
-      severity: &#39;critical&#39;
-    target_match:
-      severity: &#39;warning&#39;
-    equal: [&#39;alertname&#39;, &#39;dev&#39;, &#39;instance&#39;]
-templates:
-- /alertmanager/templates/*.tmpl
+<h3 id="cadvisordocker">安装cadvisor（docker监控）<a class="headerlink" href="#cadvisordocker" title="Permanent link">&para;</a></h3>
+<pre><code>sudo docker run \
+  --volume=/:/rootfs:ro \
+  --volume=/var/run:/var/run:ro \
+  --volume=/sys:/sys:ro \
+  --volume=/var/lib/docker/:/var/lib/docker:ro \
+  --volume=/dev/disk/:/dev/disk:ro \
+  --publish=8083:8080 \
+  --detach=true \
+  --name=cadvisor \
+  --privileged \
+  --device=/dev/kmsg \
+  --restart=unless-stopped \
+  gcr.io/cadvisor/cadvisor:v0.47.2
+</code></pre>
+<h3 id="pg-exporter">pg-exporter<a class="headerlink" href="#pg-exporter" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>docker run -ti --rm  -p 9187:9187 -e DATA_SOURCE_NAME=postgresql://postgres:{password}}@{db}:5432/postgres?sslmode=disable quay.io/prometheuscommunity/postgres-exporter:v0.13.2
 </code></pre></div>
-<h4 id="teams">发生告警到teams<a class="headerlink" href="#teams" title="Permanent link">&para;</a></h4>
-<pre><code>docker run -it -d --name prom2teams -e PROM2TEAMS_CONNECTOR="${CONNECTOR_URL}" -p 8089:8089 idealista/prom2teams:4.2.1
+<h3 id="kafka-exporter">kafka-exporter<a class="headerlink" href="#kafka-exporter" title="Permanent link">&para;</a></h3>
+<pre><code>docker run -ti --rm -p 9308:9308 danielqsj/kafka-exporter --kafka.server=foundation-kafka-1:9092
+===
+dashboard: 11285
+需要自己添加个instance 筛选器
+</code></pre>
+<h3 id="redis_exporter">redis_exporter<a class="headerlink" href="#redis_exporter" title="Permanent link">&para;</a></h3>
+<pre><code>https://github.com/oliver006/redis_exporter
+nohup ./redis_exporter -redis.addr 172.29.2.10:7000 &amp;
+dashboard: 763
 </code></pre>
 
 
@@ -763,7 +799,7 @@ templates:
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../prometheus/" class="md-footer__link md-footer__link--prev" aria-label="上一页: prometheus">
+          <a href="../altermanager/" class="md-footer__link md-footer__link--prev" aria-label="上一页: altermanager">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -773,20 +809,20 @@ templates:
                 上一页
               </span>
               <div class="md-ellipsis">
-                prometheus
+                altermanager
               </div>
             </div>
           </a>
         
         
           
-          <a href="../exporter/" class="md-footer__link md-footer__link--next" aria-label="下一页: exporter">
+          <a href="../../common/certbot/" class="md-footer__link md-footer__link--next" aria-label="下一页: certbot">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                exporter
+                certbot
               </div>
             </div>
             <div class="md-footer__button md-icon">
